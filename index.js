@@ -108,7 +108,7 @@ client.on("ready", () => {
 
 })
 
-},((3600)*1000))
+},((21600)*1000))
 })
 
 client.on("messageCreate",(msg)=>{
