@@ -1,8 +1,7 @@
 const axios = require("axios");
 require("dotenv").config();
-///////////////////////////////////////////////////////////
+///////////////////////////////////////
 var admin = require("firebase-admin");
-
 
 
 admin.initializeApp({
@@ -18,7 +17,6 @@ const { Client, Intents,MessageEmbed} = require("discord.js");
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
-
 
 client.on("ready", () => {
   console.log("Our bot is ready to go!!!!");
