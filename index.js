@@ -107,7 +107,7 @@ client.on("ready", () => {
 
 })
 
-},((21600)*1000))
+},((process.env.TIME)*1000))
 })
 
 client.on("messageCreate",(msg)=>{
