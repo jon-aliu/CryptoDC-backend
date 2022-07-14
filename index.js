@@ -1,9 +1,12 @@
+const axios = require("axios");
+require("dotenv").config();
+///////////////////////////////////////////////////////////
 var admin = require("firebase-admin");
 
 var serviceAccount = require("./serviceAccountKey.json");
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(JSON.parse(process.env.SERVICE_ACCOUNT_KEY))
 });
 
 const db = admin.firestore()
